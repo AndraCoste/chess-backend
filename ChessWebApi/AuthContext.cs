@@ -22,6 +22,7 @@ namespace ChessWebApi
         public virtual DbSet<Application> Aplications { get; set; }
 
         public virtual DbSet<Article> Articles { get; set; }
+        public virtual DbSet<ContactModel> ContactModels { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

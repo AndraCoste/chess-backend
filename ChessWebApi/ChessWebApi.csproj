@@ -156,6 +156,7 @@
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controllers\ApplicationsController.cs" />
     <Compile Include="Controllers\ArticlesController.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -167,9 +168,18 @@
     <Compile Include="Migrations\201610231927500_secondOne.Designer.cs">
       <DependentUpon>201610231927500_secondOne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610301337125_phoneToApplication.cs" />
+    <Compile Include="Migrations\201610301337125_phoneToApplication.Designer.cs">
+      <DependentUpon>201610301337125_phoneToApplication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610301345080_Contacts.cs" />
+    <Compile Include="Migrations\201610301345080_Contacts.Designer.cs">
+      <DependentUpon>201610301345080_Contacts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\AuthorizationServerProvider.cs" />
@@ -194,6 +204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610231927500_secondOne.resx">
       <DependentUpon>201610231927500_secondOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610301337125_phoneToApplication.resx">
+      <DependentUpon>201610301337125_phoneToApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610301345080_Contacts.resx">
+      <DependentUpon>201610301345080_Contacts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

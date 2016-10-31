@@ -18,14 +18,14 @@ namespace ChessWebApi.Controllers
         private AuthContext db = new AuthContext();
 
         // GET: api/Applications
-        public IQueryable<Application> GetAplications()
+        private IQueryable<Application> GetAplications()
         {
             return db.Aplications;
         }
 
         // GET: api/Applications/5
         [ResponseType(typeof(Application))]
-        public IHttpActionResult GetApplication(int id)
+        private IHttpActionResult GetApplication(int id)
         {
             Application application = db.Aplications.Find(id);
             if (application == null)
@@ -38,7 +38,7 @@ namespace ChessWebApi.Controllers
 
         // PUT: api/Applications/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutApplication(int id, Application application)
+        private IHttpActionResult PutApplication(int id, Application application)
         {
             if (!ModelState.IsValid)
             {
@@ -73,7 +73,7 @@ namespace ChessWebApi.Controllers
 
         // POST: api/Applications
         [ResponseType(typeof(Application))]
-        public IHttpActionResult PostApplication(Application application)
+        public IHttpActionResult Register(Application application)
         {
             if (!ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace ChessWebApi.Controllers
 
         // DELETE: api/Applications/5
         [ResponseType(typeof(Application))]
-        public IHttpActionResult DeleteApplication(int id)
+        private IHttpActionResult DeleteApplication(int id)
         {
             Application application = db.Aplications.Find(id);
             if (application == null)
