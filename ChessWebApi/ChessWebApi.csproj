@@ -176,6 +176,10 @@
     <Compile Include="Migrations\201610301345080_Contacts.Designer.cs">
       <DependentUpon>201610301345080_Contacts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611061918493_updatedApplication.cs" />
+    <Compile Include="Migrations\201611061918493_updatedApplication.Designer.cs">
+      <DependentUpon>201611061918493_updatedApplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Application.cs" />
     <Compile Include="Models\Article.cs" />
@@ -210,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610301345080_Contacts.resx">
       <DependentUpon>201610301345080_Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611061918493_updatedApplication.resx">
+      <DependentUpon>201611061918493_updatedApplication.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
